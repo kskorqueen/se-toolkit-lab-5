@@ -35,7 +35,7 @@ async def get_scores(
     """
     # Convert lab-04 to "Lab 04" for title matching
     lab_title_pattern = lab.replace("-", " ").title()
-
+    #
     # Find the lab item
     lab_stmt = select(ItemRecord).where(
         ItemRecord.type == "lab",
